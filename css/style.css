@@ -1,6 +1,8 @@
+@charset "UTF-8";
+
 /*
 GENERAL STYLING
-=================================== */
+================================================ */
 html {
     font-size: 100%;
 }
@@ -12,9 +14,9 @@ body {
 
 /*
 COMMON
-=================================== */
+================================================ */
 p {
-    line-height: 1.6;;
+    line-height: 1.6;
 }
 .container {
     max-width: 1000px;
@@ -26,7 +28,7 @@ p {
 
 /*
 HEADER
-==================================== */
+================================================ */
 header {
     max-width: 1000px;
     margin: 2.5rem auto 0;
@@ -50,7 +52,7 @@ header {
 
 /*
 MAIN
-==================================== */
+================================================ */
 main {
     margin-bottom: 3rem;
     background: #fff;
@@ -71,11 +73,11 @@ main {
     background: #fff;
     padding: 0 .5rem .875rem;
     font-size: 1.5rem;
-    font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
     line-height: 1.5;
 }
-.page-title a {
+.post-title a {
     color: #949087;
     text-decoration: none;
 }
@@ -84,6 +86,7 @@ main {
 }
 .post-thumb {
     margin: 0 0 1rem 0;
+    position: relative;
 }
 .post-date {
     font-size: 1.5rem;
@@ -100,7 +103,7 @@ main {
     height: 80px;
 }
 .post-date span {
-    border-bottom: 2px rgba(255, 255, 255, .5) dotted;
+    border-bottom: 2px rgba(255,255,255,.5) dotted;
     padding-bottom: 2px;
     display: block;
     width: 60%;
@@ -231,6 +234,10 @@ article blockquote::after {
     font-size: 1.5rem;
     text-align: center;
 }
+.pagination a:hover {
+    background: #93d8d0;
+    color: #fff;
+}
 .pagination a,
 .pagination .current {
     border-radius: 50%;
@@ -247,7 +254,7 @@ article blockquote::after {
 
 /*
 ASIDE
-==================================== */
+================================================ */
 aside {
     margin-top: 1rem;
 }
@@ -271,6 +278,7 @@ aside {
     left: 0;
     right: 0;
     margin: auto;
+/* Font Awesome */
     font-family: 'Font Awesome 5 Pro';
     font-weight: 900;
     color: #949087;
@@ -285,7 +293,7 @@ aside {
 /* 제목 */
 .side-box h3 {
     font-family: 'Amatic SC', cursive;
-    font-size: 1.897rem;
+    font-size: 1.875rem;
     letter-spacing: .1rem;
     text-align: center;
     margin: .875rem 0 1.125rem;
@@ -311,7 +319,7 @@ aside {
     width: 8px;
     height: 8px;
     margin: 6px 10px 0 0;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 .side-box li a {
     flex: 1;
@@ -331,7 +339,7 @@ aside {
 .newsletter-form input[type='email'] {
     border: 2px solid #ccc;
     border-radius: 10px 0 0 10px;
-    background: #ccc;
+    background: #fff;
     padding: 1rem;
     width: 75%;
 }
@@ -350,13 +358,18 @@ aside {
     background: #e38787;
 }
 
-/* 
+/*
 FOOTER
-========================================== */
+================================================ */
 footer {
     background: #949087;
     text-align: center;
     padding: 3rem;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 footer li {
     margin: 0 12px;
@@ -372,11 +385,11 @@ footer small {
     font-size: .875rem;
 }
 
-/* 
-DESKTOP SIZE
-========================================== */
+/*
+DESKTOP SIZE 
+================================================ */
 @media (min-width: 600px) {
-    /* Layout */
+    /* Layout*/
     .container {
         display: flex;
         justify-content: space-between;
@@ -421,5 +434,4 @@ DESKTOP SIZE
         position: sticky;
         top: 1rem;
     }
-
 }
