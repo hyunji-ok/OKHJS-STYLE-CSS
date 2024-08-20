@@ -1,7 +1,7 @@
 # STYLE-CSS
 
 ## [description]
-- 브랜치별로 여러 스타일링 샘플 스터디
+- 회사 사이트 만들기
 
 ## [caution]
 - 원본 repo(upstream)과 fork repo(origin)의 branch 맞추는 방법 
