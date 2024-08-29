@@ -2,7 +2,7 @@
 
 /*
 COLORS
-================== */
+================================================ */
 :root {
     --light-blue: #4db1ec;
     --blue: #1665cc;
@@ -18,20 +18,20 @@ COLORS
 
 /*
 GENERAL STYLING
-================== */
+================================================ */
 html {
     font-size: 100%;
     /* 스무스 스크롤 */
     scroll-behavior: smooth;
 }
 body {
-    color: var(--grey);
-    font-family: sans-serif;
+	color: var(--grey);
+	font-family: sans-serif;
 }
 
 /*
 COMMON
-============== */
+================================================ */
 p {
     line-height: 1.7;
 }
@@ -63,7 +63,7 @@ h2,
 
 /*
 HEADER
-================== */
+================================================ */
 header {
     background: var(--grey);
     padding: 1rem 0;
@@ -83,7 +83,7 @@ header a {
     position: absolute;
     top: 12px;
     right: 12px;
-    border: 1px solid rgba(255, 255, 255, .5);
+    border: 1px solid rgba(255,255,255,.5);
     color: var(--white);
     padding: .5rem 1rem;
 }
@@ -110,8 +110,10 @@ header a {
 
 /*
 HERO
-====================== */
+================================================ */
 #hero {
+    /* ↓ 생략형이면 브라우저에 따라 제대로 동작하지 않을 수 있음
+    background: var(--light-blue) url('../images/hero.jpg') no-repeat center / cover; */
     background-color: var(--light-blue);
     background-image: url('../images/hero.jpg');
     background-repeat: no-repeat;
@@ -122,18 +124,19 @@ HERO
     height: 100vh;
     display: flex;
     align-items: center;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 @keyframes bg-color {
-    0% {background-color: var(--light-blue);}
-    12.5% {background-color: var(--blue);}
-    25% {background-color: var(--purple);}
-    37.5% {background-color: var(--pink);}
-    50% {background-color: var(--orange);}
-    62.5% {background-color: var(--yellow);}
-    75% {background-color: var(--light-green);}
-    87.5% {background-color: var(--green);}
-    100% {background-color: var(--light-blue);}
+    0% { background-color: var(--light-blue); }
+    12.5% { background-color: var(--blue); }
+    25% { background-color: var(--purple); }
+    37.5% { background-color: var(--pink); }
+    50% { background-color: var(--orange); }
+    62.5% { background-color: var(--yellow); }
+    75% { background-color: var(--light-green); }
+    87.5% { background-color: var(--green); }
+    100% { background-color: var(--light-blue); }
 }
 #hero h1 {
     font-size: 3.5rem;
@@ -150,16 +153,16 @@ HERO
 
 /*
 ABOUT
-============= */
+================================================ */
 #about {
     padding: 4rem 1rem;
 }
 #about h2 {
-    background: linear-gradient(var(--yellow), var(--orange));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent
+  background: linear-gradient(var(--yellow), var(--orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 #about p {
     margin-bottom: 2rem;
@@ -167,7 +170,7 @@ ABOUT
 
 /*
 NEWS
-============== */
+================================================ */
 #news {
     background-image: linear-gradient(var(--light-green), var(--green));
     padding: 7rem 0;
@@ -182,7 +185,7 @@ NEWS
     width: 100%;
 }
 .news-table tr {
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255,255,255,.5);
 }
 .news-table td {
     display: block;
@@ -198,7 +201,7 @@ NEWS
 
 /*
 SPEAKERS
-=========== */
+================================================ */
 #speakers {
     padding: 4rem 1rem;
 }
@@ -212,11 +215,11 @@ SPEAKERS
     margin-left: 1rem;
 }
 #speakers h2 {
-    background: linear-gradient(var(--light-blue), var(--blue));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+  background: linear-gradient(var(--light-blue), var(--blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 #speakers h3 {
     font-size: 1.5rem;
@@ -224,12 +227,12 @@ SPEAKERS
 }
 #speakers img {
     border-radius: 50%;
-    margin-bottom: .5rem;
+    width: 20%;
 }
 
 /*
 TICKET
-======== */
+================================================ */
 #ticket {
     background-image: linear-gradient(var(--pink), var(--purple));
     padding: 6rem 1rem 2rem;
@@ -249,7 +252,7 @@ TICKET
     margin-bottom: .5rem;
 }
 .ticket-field {
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255,255,255,.6);
     padding: 1rem;
     width: 100%;
     margin-bottom: 1.5rem;
@@ -265,9 +268,9 @@ TICKET
 
 /*
 FOOTER
-================ */
+================================================ */
 .footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
     padding-top: 2rem;
     text-align: center;
     font-size: .875rem;
@@ -279,15 +282,15 @@ FOOTER
 
 /*
 DESKTOP SIZE
-==================== */
+================================================ */
 @media (min-width: 600px) {
-    /* COMMON */
+/* Common */
     h2 {
         font-size: 5rem;
     }
     a:hover,
     .ticket-btn:hover {
-        transition: .3s
+        transition: .3s;
     }
     a:hover {
         color: var(--blue);
@@ -296,7 +299,7 @@ DESKTOP SIZE
         background: var(--blue);
     }
 
-    /* Header */
+/* Header */
     .btn-menu {
         display: none;
     }
@@ -308,16 +311,14 @@ DESKTOP SIZE
     .main-nav li {
         margin: 0 0 0 1.5rem;
     }
-
-    /* Hero */
+/* Hero */
     #hero h1 {
         font-size: 6.875rem;
     }
     .hero-date {
         font-size: 3rem;
     }
-
-    /* News */
+/* News */
     .news-table td {
         display: table-cell;
     }
@@ -325,10 +326,9 @@ DESKTOP SIZE
         padding: 1.125rem 0 1rem 1rem;
     }
     .news-content {
-        padding: 1rem 1rem 1rem 0
+        padding: 1rem 1rem 1rem 0;
     }
-
-    /* Speakers */
+/* Speakers */
     #speakers h2 {
         margin-bottom: 4rem;
     }
