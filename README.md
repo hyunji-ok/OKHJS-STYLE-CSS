@@ -1,11 +1,7 @@
 # STYLE-CSS
 
 ## [description]
-- 브랜치별로 여러 스타일링 샘플 스터디
-    - main: description을 설명하는 브랜치
-    - ok/blog-site: 블로그 사이트 만들어 보는 브랜치
-    - ok/company-site: 회사 사이트 만들어 보는 브랜치
-    - ok/landing-page: 랜딩 페이지 만들어 보는 브랜치
+- 이벤트 페이지 스타일링
 
 ## [author]
 - 옥현지
