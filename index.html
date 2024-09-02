@@ -7,7 +7,7 @@
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- CSS -->
+    <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css">
@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
+	<body>
         <header>
             <div class="header-text">
                 <p class="header-title">Photographer</p>
@@ -40,8 +40,9 @@
             </a>
             <a class="grid-gallery" href="images/img2-1600.jpg" data-aos="fade-up">
                 <img class="grid-item"
-                    src="images/img2-400.jpg 400w,
-                         images/img2-800.jps 800w"
+                    src="images/img2-400.jpg"
+                    srcset="images/img2-400.jpg 400w,
+                            images/img2-800.jpg 800w"
                     alt="Fushimi Inari Shrine">
             </a>
             <a class="grid-gallery" href="images/img3-1600.jpg" data-aos="fade-up">
@@ -132,9 +133,9 @@
             <p class="copyright"><small>&copy; 2021 Mana Ohmoto</small></p>
         </footer>
 
-        <!-- JavaScript -->
+    <!-- JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="js/script.js"></script>
-    </body>
+	</body>
 </html>
